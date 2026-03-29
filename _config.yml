@@ -1,0 +1,29 @@
+title: Charles T. Betz, Composer
+description: "Composer and lyricist - musical theater, choral works, and songs"
+url: "https://charlestbetz.github.io"
+baseurl: "/charlestbetz.com"
+
+# Author info
+author:
+  name: Charles T. Betz
+  email: char@charlestbetz.com
+
+theme: minima
+
+header_pages:
+  - bio.md
+  - blog.md
+  - contact.md
+
+plugins:
+  - jekyll-seo-tag
+
+# Pagination
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

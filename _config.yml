@@ -52,6 +52,7 @@ exclude:
   - mockup.html
   - charlestbetz-jekyll-spec.md
   - DONE.txt
+  - WEBMASTER.md
   - CARD-CONVERSION-SUMMARY.md
   - MIGRATION-SUMMARY.md
   - QUICKSTART.md

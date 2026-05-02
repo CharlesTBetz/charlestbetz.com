@@ -4,7 +4,7 @@ title: "Earth Was The Dream! - Final Version"
 date: 2025-08-01
 card_type: composition
 front_page: true
-pinned: true
+pinned: false
 song_meta: "Song · Solo voice"
 youtube_id: "epX-xNt6h90"
 excerpt: "Sung by the great Lia Peros - final version after much refinement."

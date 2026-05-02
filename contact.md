@@ -22,5 +22,6 @@ I'm open to commissions for:
 - Musical theater songs and scenes
 - Concert songs
 - Arrangements
+- Engraving and script/score preparation
 
 Please reach out to discuss your project, timeline, and budget.

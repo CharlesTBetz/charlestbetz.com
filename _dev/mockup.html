@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charles T. Betz — Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,ital@9..144,400,0;9..144,500,0;9..144,600,0;9..144,400,1;9..144,500,1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fafaf7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: #1a2f4a;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      transition: color 0.15s ease;
+    }
+    a:hover { color: #2c4a73; text-decoration-thickness: 2px; }
+
+    h1, h2, h3, h4 {
+      font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
+      font-weight: 500;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: #1a1a1a;
+      margin-top: 0;
+    }
+    h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 400; }
+    h2 { font-size: clamp(1.8rem, 3.5vw, 2.4rem); }
+    h3 { font-size: 1.4rem; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+    .container--narrow { max-width: 720px; }
+
+    /* === Header === */
+    .site-header { border-bottom: 1px solid #d8d6cc; margin-bottom: 48px; }
+    .site-header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 28px 0 24px;
+    }
+    .wordmark {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #1a2f4a;
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .wordmark:hover { color: #2c4a73; }
+    .site-nav ul { display: flex; gap: 24px; list-style: none; }
+    .site-nav a {
+      font-family: "Inter", sans-serif;
+      font-size: 0.88rem;
+      text-decoration: none;
+      color: #4a4a4a;
+      letter-spacing: 0.02em;
+    }
+    .site-nav a:hover { color: #1a2f4a; }
+    .site-nav a.is-active {
+      color: #1a1a1a;
+      border-bottom: 1px solid #1a2f4a;
+      padding-bottom: 2px;
+    }
+
+    /* === Hero (top of homepage only) === */
+    .hero { margin-bottom: 48px; }
+    .label {
+      font-family: "Inter", sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8a8a8a;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .tagline {
+      font-family: "Fraunces", Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      line-height: 1.3;
+      color: #4a4a4a;
+      margin-bottom: 16px;
+    }
+    .hero-intro {
+      font-size: 1.05rem;
+      color: #4a4a4a;
+      max-width: 540px;
+    }
+
+    /* === Card stream (1-up) === */
+    .card-stream { display: flex; flex-direction: column; gap: 24px; }
+
+    .card {
+      background: #fff;
+      border: 1px solid #d8d6cc;
+      border-radius: 8px;
+      padding: clamp(20px, 3vw, 32px);
+      transition: box-shadow 0.2s ease;
+    }
+    .card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+
+    .card--pinned {
+      border-left: 3px solid #1a2f4a;
+    }
+    .card--pinned .pin-indicator {
+      font-family: "Inter", sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1a2f4a;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .card .card-tag {
+      display: inline-block;
+      font-family: "Inter", sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8a8a8a;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .card .card-date {
+      font-family: "Inter", sans-serif;
+      font-size: 0.78rem;
+      color: #8a8a8a;
+      margin-bottom: 8px;
+    }
+    .card h3 {
+      margin-bottom: 10px;
+    }
+    .card h3 a { text-decoration: none; color: #1a1a1a; }
+    .card h3 a:hover { color: #1a2f4a; }
+    .card p { color: #4a4a4a; margin-bottom: 10px; }
+    .card p:last-child { margin-bottom: 0; }
+
+    .card-image {
+      width: 100%;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      background: #e8e5dc;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8a8a8a;
+      font-size: 0.85rem;
+    }
+
+    .card .video-embed-frame {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 4px;
+      margin-bottom: 16px;
+    }
+    .card .video-embed-frame iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+
+    .cta-link {
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    /* === Menu pages: card grid === */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .card-grid .card { display: flex; flex-direction: column; }
+    .card-grid .card-image { height: 180px; }
+
+    /* === Footer === */
+    .site-footer {
+      border-top: 1px solid #d8d6cc;
+      padding: 40px 0 48px;
+      margin-top: 64px;
+    }
+    .site-footer-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .footer-tagline {
+      font-family: "Fraunces", Georgia, serif;
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #4a4a4a;
+      max-width: 300px;
+    }
+    .site-footer nav ul { list-style: none; display: flex; gap: 20px; }
+    .site-footer nav a { font-size: 0.85rem; color: #4a4a4a; text-decoration: none; }
+    .site-footer nav a:hover { color: #1a2f4a; }
+    .social-links { list-style: none; display: flex; gap: 16px; }
+    .social-links a { font-size: 0.85rem; color: #4a4a4a; text-decoration: none; }
+    .social-links a:hover { color: #1a2f4a; }
+    .footer-meta { margin-top: 24px; font-size: 0.78rem; color: #8a8a8a; }
+
+    /* === Responsive === */
+    @media (max-width: 720px) {
+      .site-header-inner { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .site-nav ul { flex-wrap: wrap; gap: 14px 18px; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+
+    /* === Page sections === */
+    .page-title { margin-bottom: 8px; }
+    .page-intro { color: #4a4a4a; margin-bottom: 32px; font-size: 1.05rem; }
+
+    /* === Section divider === */
+    .section-label {
+      font-family: "Inter", sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #8a8a8a;
+      font-weight: 500;
+      margin: 48px 0 20px;
+      padding-top: 24px;
+      border-top: 1px solid #d8d6cc;
+    }
+    .section-label:first-of-type { border-top: none; margin-top: 0; padding-top: 0; }
+
+    /* Demo page switcher (not part of real site) */
+    .demo-switcher {
+      background: #1a2f4a;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 0.82rem;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      font-family: "Inter", sans-serif;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .demo-switcher span { opacity: 0.6; }
+    .demo-switcher a { color: #fff; text-decoration: none; opacity: 0.8; }
+    .demo-switcher a:hover { opacity: 1; color: #fff; }
+    .demo-switcher a.active { opacity: 1; font-weight: 600; text-decoration: underline; color: #fff; }
+    .demo-page { display: none; }
+    .demo-page.active { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- Demo page switcher -->
+  <div class="demo-switcher">
+    <span>Mockup:</span>
+    <a href="#" class="active" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('projects')">Projects</a>
+    <a href="#" onclick="showPage('shows')">Shows</a>
+    <a href="#" onclick="showPage('compositions')">Compositions</a>
+    <a href="#" onclick="showPage('songs')">Songs</a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header-inner">
+        <a class="wordmark" href="/">Charles T. Betz</a>
+        <nav class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+            <li><a href="#" onclick="showPage('shows')">Shows</a></li>
+            <li><a href="#" onclick="showPage('compositions')">Compositions</a></li>
+            <li><a href="#" onclick="showPage('songs')">Songs</a></li>
+            <li><a href="/gallery/">Gallery</a></li>
+            <li><a href="/bio/">Bio</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- HOME PAGE -->
+  <!-- ============================================================ -->
+  <div id="page-home" class="demo-page active">
+    <main class="container container--narrow">
+
+      <!-- Hero -->
+      <section class="hero">
+        <p class="label">Composer · Lyricist · Arranger · Writer</p>
+        <h1 class="tagline">Telling stories with music,<br>in a universe of simultaneous time.</h1>
+        <p class="hero-intro">Based in Minneapolis. I write musical theater and choral music.</p>
+      </section>
+
+      <!-- Card stream: 1-up, hand-curated, pinned first -->
+      <div class="card-stream">
+
+        <!-- Pinned card -->
+        <article class="card card--pinned">
+          <div class="pin-indicator">📌 Pinned</div>
+          <span class="card-tag">Project</span>
+          <h3><a href="/projects/five-minutes-on-the-low-road/">Five Minutes On The Low Road</a></h3>
+          <p>A woman has a near-death experience, and lives with the consequences. A new musical in development — book by Josiah Thomas Turner, music &amp; lyrics by Charles T. Betz.</p>
+          <p>We're working from research at the International Association for Near-Death Studies and field interviews with experiencers. Josiah joined the project in February 2025 and is shaping the book with tremendous insight.</p>
+          <a class="cta-link" href="/projects/five-minutes-on-the-low-road/">Read about the project →</a>
+        </article>
+
+        <!-- Song card with video -->
+        <article class="card">
+          <span class="card-tag">Song · Five Minutes On The Low Road</span>
+          <span class="card-date">November 2024</span>
+          <h3><a href="#">First Song from Five Minutes On The Low Road</a></h3>
+          <div class="video-embed-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/FK4UWehsn5M"
+              title="First song from Five Minutes On The Low Road"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p>The first song from our musical in development is now online. A glimpse into the world we're building.</p>
+        </article>
+
+        <!-- Show card with image -->
+        <article class="card">
+          <span class="card-tag">Show</span>
+          <span class="card-date">May 15, 2025</span>
+          <h3><a href="#">River Concert — World Premiere of River Song</a></h3>
+          <div class="card-image">[Event photo placeholder]</div>
+          <p>The May 15th River Concert with the world premiere of River Song was a tremendous success. Crescendo Community Chorus performed beautifully in partnership with Friends of the Mississippi River.</p>
+          <p>Watch the <a href="https://www.youtube.com/live/zFBaIpSntM0">livestream recording</a> or check out the <a href="#">program</a>.</p>
+        </article>
+
+        <!-- Composition card -->
+        <article class="card">
+          <span class="card-tag">Composition</span>
+          <span class="card-date">August 2025</span>
+          <h3><a href="#">Earth Was The Dream</a></h3>
+          <div class="video-embed-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/epX-xNt6h90"
+              title="Earth Was The Dream — sung by Lia Peros"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p>Final version after much refinement — sung by Lia Peros. A song about the boundary between worlds.</p>
+        </article>
+
+        <!-- Composition card -->
+        <article class="card">
+          <span class="card-tag">Composition</span>
+          <span class="card-date">May 2025</span>
+          <h3><a href="#">River Song — Demo Recordings</a></h3>
+          <p>Score video by <a href="https://www.youtube.com/watch?v=V4UDeDlYxI8">Macrófona choir of Argentina</a> and a <a href="https://www.youtube.com/watch?v=z9oHgahDknA">video imagery version</a> are now available. Extraordinary work from an extraordinary ensemble on the other side of the equator.</p>
+        </article>
+
+        <!-- Show card -->
+        <article class="card">
+          <span class="card-tag">Show</span>
+          <span class="card-date">February 2025</span>
+          <h3><a href="#">River Song Premiere Announced</a></h3>
+          <p>River Song will premiere May 15 with Crescendo Community Chorus in partnership with Friends of the Mississippi River. An SATB choral work for choir and piano honoring the river that shapes this city.</p>
+        </article>
+
+        <!-- Project milestone card -->
+        <article class="card">
+          <span class="card-tag">Project · Five Minutes On The Low Road</span>
+          <span class="card-date">February 2025</span>
+          <h3><a href="#">Josiah Thomas Turner Joins as Book Writer</a></h3>
+          <p>Thrilled to welcome <a href="https://newplayexchange.org/users/20167/josiah-thomas-turner">Josiah Thomas Turner</a> as book writer for Five Minutes On The Low Road. Josiah brings deep empathy and structural instinct to this story about a woman's near-death experience.</p>
+        </article>
+
+        <!-- Show card -->
+        <article class="card">
+          <span class="card-tag">Show</span>
+          <span class="card-date">October 2024</span>
+          <h3><a href="#">Wild and Precious — Evanston Performance</a></h3>
+          <p>Wild and Precious was performed as a Prelude on Nov 3 at First Presbyterian Church in Evanston, IL, in memory of Kay Sugiura. Grateful to the music director for the opportunity to honor Kay's memory with this piece.</p>
+        </article>
+
+        <!-- Blog card -->
+        <article class="card">
+          <span class="card-tag">Blog</span>
+          <span class="card-date">May 2025</span>
+          <h3><a href="#">River Song: Notes on the Journey</a></h3>
+          <p>How a piece for the Mississippi came together with a choir in Argentina, and what it means to write music for a river you've lived beside for thirty years.</p>
+          <a class="cta-link" href="#">Read the full post →</a>
+        </article>
+
+      </div><!-- /card-stream -->
+    </main>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- PROJECTS PAGE -->
+  <!-- ============================================================ -->
+  <div id="page-projects" class="demo-page">
+    <main class="container">
+      <h2 class="page-title">Projects</h2>
+      <p class="page-intro">Musical theater works — in development and beyond.</p>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <div class="card-image">[Hero image]</div>
+          <span class="card-tag">In development</span>
+          <h3><a href="#">Five Minutes On The Low Road</a></h3>
+          <p>A woman has a near-death experience, and lives with the consequences. Book by Josiah Thomas Turner.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-image">[Production photo]</div>
+          <span class="card-tag">Premiered 2023</span>
+          <h3><a href="#">IQ: The Musical</a></h3>
+          <p>A 15-minute musical about obsolescence. Part of "Replaced! Six Short Musicals" produced in Los Angeles by NMI.</p>
+        </article>
+
+        <article class="card" style="opacity: 0.5; border-style: dashed;">
+          <div class="card-image" style="background: #f0ede4;">[Future project]</div>
+          <span class="card-tag">Future</span>
+          <h3>More to come</h3>
+          <p style="font-style: italic;">Room for 9–12 projects over time.</p>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SHOWS PAGE -->
+  <!-- ============================================================ -->
+  <div id="page-shows" class="demo-page">
+    <main class="container">
+      <h2 class="page-title">Shows</h2>
+      <p class="page-intro">Performances past and upcoming.</p>
+
+      <p class="section-label">Upcoming</p>
+      <div class="card-stream" style="max-width: 720px;">
+        <article class="card">
+          <span class="card-date">June 14, 2026 · 7:30 PM</span>
+          <h3><a href="#">Example Future Performance</a></h3>
+          <div class="card-image">[Venue / event image]</div>
+          <p>Placeholder for an upcoming show. Venue, ticket link, program details. Cards support 4–6 sentences and an image.</p>
+          <p><strong>Venue:</strong> Example Theater, Minneapolis<br><strong>Tickets:</strong> <a href="#">Available here</a></p>
+        </article>
+      </div>
+
+      <p class="section-label">Past</p>
+      <div class="card-stream" style="max-width: 720px;">
+
+        <article class="card">
+          <span class="card-date">May 15, 2025</span>
+          <h3><a href="#">River Concert — World Premiere of River Song</a></h3>
+          <div class="card-image">[Concert photo]</div>
+          <p>Crescendo Community Chorus premiered River Song in partnership with Friends of the Mississippi River. A tremendous success — the choir brought deep emotion to this piece about the river that shapes Minneapolis.</p>
+          <p>Watch the <a href="https://www.youtube.com/live/zFBaIpSntM0">livestream</a>.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-date">October 2024</span>
+          <h3><a href="#">Wild and Precious — First Presbyterian, Evanston</a></h3>
+          <p>Performed as a Prelude on Nov 3, in memory of Kay Sugiura. A choral setting of Mary Oliver's "The Summer Day" that found exactly the right moment.</p>
+        </article>
+
+        <article class="card">
+          <span class="card-date">July 2024</span>
+          <h3><a href="#">Five Minutes On The Low Road — NMI Reading</a></h3>
+          <p>Reading of the book with LA-based actors as part of the "From Outline to Draft" NMI course with John Sparks. First time hearing the story out loud with a cast.</p>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- COMPOSITIONS PAGE -->
+  <!-- ============================================================ -->
+  <div id="page-compositions" class="demo-page">
+    <main class="container">
+      <h2 class="page-title">Compositions</h2>
+      <p class="page-intro">Choral works and art songs.</p>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="card-tag">Choral · SATB, piano</span>
+          <h3><a href="#">River Song</a></h3>
+          <p>A work honoring the Mississippi River. Premiered May 2025 by Crescendo Community Chorus.</p>
+          <span class="card-date">2025 · 8 min</span>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Choral</span>
+          <h3><a href="#">Wild and Precious</a></h3>
+          <p>A choral setting of Mary Oliver's "The Summer Day."</p>
+          <span class="card-date">2024</span>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Song · Solo voice</span>
+          <h3><a href="#">Earth Was The Dream</a></h3>
+          <p>A song about the boundary between worlds. Sung by Lia Peros.</p>
+          <span class="card-date">2025</span>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SONGS PAGE -->
+  <!-- ============================================================ -->
+  <div id="page-songs" class="demo-page">
+    <main class="container container--narrow">
+      <h2 class="page-title">Songs</h2>
+      <p class="page-intro">All songs, newest first.</p>
+
+      <div class="card-stream">
+
+        <article class="card">
+          <span class="card-tag">Song · Solo voice</span>
+          <span class="card-date">2025</span>
+          <h3><a href="#">Earth Was The Dream</a></h3>
+          <p>A song about the boundary between worlds — what if earth was the dream, and what we call death is waking up? Final version after much refinement, sung by Lia Peros.</p>
+          <div class="video-embed-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/epX-xNt6h90"
+              title="Earth Was The Dream — sung by Lia Peros"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Choral · SATB, piano · 8 min</span>
+          <span class="card-date">2025</span>
+          <h3><a href="#">River Song</a></h3>
+          <p>A work honoring the Mississippi River, premiered by Crescendo Community Chorus in partnership with Friends of the Mississippi River. Score video performed by the extraordinary Macrófona choir of Argentina.</p>
+          <div class="video-embed-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/V4UDeDlYxI8"
+              title="River Song — score video by Macrófona choir"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">From: <a href="/projects/five-minutes-on-the-low-road/">Five Minutes On The Low Road</a></span>
+          <span class="card-date">2024</span>
+          <h3><a href="#">First Song (title TBD)</a></h3>
+          <p>The first song from our musical in development — a glimpse into the world we're building around a woman's near-death experience.</p>
+          <div class="video-embed-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/FK4UWehsn5M"
+              title="First song from Five Minutes On The Low Road"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="card-tag">Choral</span>
+          <span class="card-date">2024</span>
+          <h3><a href="#">Wild and Precious</a></h3>
+          <p>A choral setting of Mary Oliver's "The Summer Day." Performed at First Presbyterian Church, Evanston, in memory of Kay Sugiura.</p>
+          <div class="video-embed-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/eOvH8a_IizI"
+              title="Wild and Precious"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+        </article>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer-grid">
+        <div>
+          <p class="footer-tagline">Telling stories with music, in a universe of simultaneous time.</p>
+        </div>
+        <nav aria-label="Footer">
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Shows</a></li>
+            <li><a href="#">Compositions</a></li>
+            <li><a href="#">Songs</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Bio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <ul class="social-links" aria-label="Social media">
+          <li><a href="#">Bluesky</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <p class="footer-meta">© 2026 Charles T. Betz. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function showPage(name) {
+      document.querySelectorAll('.demo-page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page-' + name).classList.add('active');
+      document.querySelectorAll('.demo-switcher a').forEach(a => a.classList.remove('active'));
+      event.target.classList.add('active');
+      window.scrollTo(0, 0);
+      event.preventDefault();
+    }
+  </script>
+
+</body>
+</html>

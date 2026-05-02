@@ -49,8 +49,7 @@ exclude:
   - README.md
   - vendor/
   - node_modules/
-  - mockup.html
-  - charlestbetz-jekyll-spec.md
+  - _dev/
   - DONE.txt
   - WEBMASTER.md
   - CARD-CONVERSION-SUMMARY.md

@@ -24,7 +24,7 @@ intro: "All songs, newest first."
         <span class="card-date">{{ post.date | date: "%Y" }}</span>
         <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
 
-        {% if post.youtube_id %}
+        {% if post.youtube_id and post.youtube_id != "" %}
           <div class="video-embed-frame">
             <iframe
               src="https://www.youtube-nocookie.com/embed/{{ post.youtube_id }}"

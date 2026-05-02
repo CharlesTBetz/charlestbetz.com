@@ -23,7 +23,7 @@
 
   <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
 
-  {% if include.post.youtube_id %}
+  {% if include.post.youtube_id and include.post.youtube_id != "" %}
     <div class="video-embed-frame">
       <iframe
         src="https://www.youtube-nocookie.com/embed/{{ include.post.youtube_id }}"

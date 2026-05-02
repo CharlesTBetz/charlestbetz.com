@@ -103,6 +103,14 @@ Create `_projects/slug.md`. Set `order:` to control position on the Projects pag
 ### Add a photo to gallery
 Edit `gallery.md` directly. Use markdown image syntax with `relative_url` filter.
 
+## Backlog
+
+Small follow-ups, in no particular order. Drop items when done.
+
+- **Fix post count in changelog.** Changelog says "25 posts"; actual is 27 (`ls _posts | wc -l`). Worth keeping accurate as it grows.
+- **Refresh `README.md`.** It still describes the pre-redesign palette (golden `#c4a843`, white `#ffffff`) and credits "Kyoshi (OpenClaw subagent)" for the initial migration. Either retire it, or replace its body with a one-line pointer to this file.
+- **Document the project ↔ song linkage convention.** A song's `project_url` must match the project's permalink (`/projects/<slug>/`). It's currently a hand-typed string with nothing enforcing it. Worth a sentence under "Add a new project."
+
 ## Changelog
 
 ### 2026-05-02 — Site launch

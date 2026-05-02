@@ -12,7 +12,7 @@ Interested in collaborating on a musical theater project? Want to commission a c
 
 ## Connect
 
-- [YouTube](https://www.youtube.com/@charlestbetz) - Watch videos of my work
+- [YouTube](https://www.youtube.com/@charlestbetzmusic) - Watch videos of my work
 - [New Musical Theater Exchange](http://nmte.org) - My Minneapolis musical theater collaborative
 
 ### About Commissions

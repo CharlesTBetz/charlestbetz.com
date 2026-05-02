@@ -18,4 +18,6 @@ Soprano **Norah Long** performed **"Best for Her"** and **"This Side of Tomorrow
 ![Charlie Betz (composer), Josiah Thomas Turner (librettist), Josh Row (tenor), Jake Endres (baritone), Norah Long (soprano)]({{ "/assets/images/shows/rough-cuts-2026-03.jpg" | relative_url }})
 *Charlie Betz (composer), Josiah Thomas Turner (librettist), Josh Row (tenor), Jake Endres (baritone), Norah Long (soprano)*
 
+Four of us from the [New Musical Theater Exchange](http://nmte.org) had material featured — Robert Elhai, Ben Larson, Brenda Varda, and myself. [Full writeup on the NMTE site.](https://nmte.org/events/2026/03/16/rough-cuts-nautilus/)
+
 The consensus among everyone involved: one of the best Rough Cuts in memory. Musical direction by Sonja Thompson.

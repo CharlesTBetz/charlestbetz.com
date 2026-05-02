@@ -26,6 +26,12 @@ The show's climactic question: if all incarnations happen simultaneously — if 
 - **A love story in two registers** — Balthazar and Anatu in ancient Babylon; Shawn and Sophia in modern Minneapolis, finding their way back to each other after years apart
 - **A genuine controlling idea**: *We can make new choices because the past is present*
 
+## Songs
+
+"There Is One" — a convergent musical service sung simultaneously by Shawn's modern congregation and Balthazar's ancient one. The show's signature number and its native grammar: two men, two eras, one song.
+
+More songs coming as they're recorded.
+
 ## Current status
 
 Book in development. Twenty-plus songs spotted, with several fully scored and recorded. Dramaturgical input from Elise Dewsberry (NMI). The structure is a complete two-act arc; the book pass is underway.

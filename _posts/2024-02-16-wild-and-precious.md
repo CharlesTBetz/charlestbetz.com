@@ -13,10 +13,13 @@ excerpt: "A commission written for a beloved person. An SATB choral piece based 
 
 Here is a commission I wrote for a beloved person. It is an SATB choral piece. The concept is based on the famous Mary Oliver poem, [The Summer Day](https://wordsfortheyear.com/2015/06/21/the-summer-day-by-mary-oliver/).
 
-## Watch and Listen
+## Video with imagery
 
-- [Video with imagery](https://www.youtube.com/watch?v=eOvH8a_IizI)
-- [Score video](https://youtu.be/p16XwCSebws)
+{% include youtube-embed.html id="eOvH8a_IizI" title="Wild and Precious — video with imagery" %}
+
+## Score video
+
+{% include youtube-embed.html id="p16XwCSebws" title="Wild and Precious — score video" %}
 
 ## The Text
 

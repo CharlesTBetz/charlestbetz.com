@@ -4,8 +4,8 @@ title: "River Concert - World Premiere Success"
 date: 2025-05-15
 card_type: show
 front_page: true
-youtube_id: "zFBaIpSntM0"
+youtube_id: "z9oHgahDknA"
 excerpt: "The May 15th River Concert with world premiere of River Song was a tremendous success."
 ---
 
-The May 15th "River Concert" with the world premiere of River Song was a tremendous success - you can [view the livestream](https://www.youtube.com/live/zFBaIpSntM0) or [check out the program](https://c586375e-5c0d-42a7-86f4-eb0362bf102b.usrfiles.com/ugd/c58637_935d0141abe940eba17c8f082567d145.pdf).
+The May 15th "River Concert" with the world premiere of River Song was a tremendous success. Unfortunately the livestream link has expired, but you can watch the video with imagery version above, or the [score video](https://www.youtube.com/watch?v=V4UDeDlYxI8) performed by the Macrófona choir of Argentina.

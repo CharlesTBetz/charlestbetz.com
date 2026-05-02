@@ -4,8 +4,8 @@ description: "Charles T. Betz is a composer, lyricist, arranger, and writer base
 author:
   name: "Charles T. Betz"
   email: "char@charlestbetz.com"
-url: "https://charlestbetz.github.io"
-baseurl: "/charlestbetz.com"
+url: "https://www.charlestbetz.com"
+baseurl: ""
 
 markdown: kramdown
 permalink: /blog/:year/:month/:title/

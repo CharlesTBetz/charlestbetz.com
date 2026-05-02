@@ -1,0 +1,30 @@
+---
+layout: default
+title: Shows
+permalink: /shows/
+intro: "Performances past and upcoming."
+---
+<div class="container container--narrow">
+  <h2 class="page-title">{{ page.title }}</h2>
+  <p class="page-intro">{{ page.intro }}</p>
+
+  {% assign shows = site.posts | where: "card_type", "show" %}
+  {% assign upcoming = shows | where: "upcoming", true %}
+  {% assign past = shows | where_exp: "post", "post.upcoming != true" %}
+
+  {% if upcoming.size > 0 %}
+    <p class="section-label">Upcoming</p>
+    <div class="card-stream">
+      {% for post in upcoming %}
+        {% include card.html post=post %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <p class="section-label">Past</p>
+  <div class="card-stream">
+    {% for post in past %}
+      {% include card.html post=post %}
+    {% endfor %}
+  </div>
+</div>

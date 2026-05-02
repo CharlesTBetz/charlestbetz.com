@@ -1,0 +1,26 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+intro: "Musical theater works — in development and beyond."
+---
+<div class="container">
+  <h2 class="page-title">{{ page.title }}</h2>
+  <p class="page-intro">{{ page.intro }}</p>
+
+  <div class="card-grid">
+    {% assign projects = site.projects | sort: "order" %}
+    {% for project in projects %}
+      <article class="card">
+        {% if project.hero_image %}
+          <div class="card-image">
+            <img src="{{ project.hero_image | relative_url }}" alt="{{ project.title }}">
+          </div>
+        {% endif %}
+        <span class="card-tag">{{ project.status }}</span>
+        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+        <p>{{ project.logline }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</div>

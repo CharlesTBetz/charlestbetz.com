@@ -1,0 +1,112 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 64px);
+}
+
+.container--narrow {
+  max-width: 720px;
+}
+
+// Header
+.site-header {
+  border-bottom: 1px solid $color-rule;
+  margin-bottom: 48px;
+}
+
+.site-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 28px 0 24px;
+}
+
+.wordmark {
+  font-family: $font-display;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: $color-accent;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  &:hover { color: $color-accent-hover; }
+}
+
+.site-nav {
+  ul { display: flex; gap: 24px; }
+  a {
+    font-family: $font-body;
+    font-size: 0.88rem;
+    text-decoration: none;
+    color: $color-ink-soft;
+    letter-spacing: 0.02em;
+    &:hover { color: $color-accent; }
+    &.is-active {
+      color: $color-ink;
+      border-bottom: 1px solid $color-accent;
+      padding-bottom: 2px;
+    }
+  }
+}
+
+.nav-toggle { display: none; }
+
+// Footer
+.site-footer {
+  border-top: 1px solid $color-rule;
+  padding: 40px 0 48px;
+  margin-top: 64px;
+}
+
+.site-footer-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-tagline {
+  font-family: $font-display;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: $color-ink-soft;
+  max-width: 300px;
+}
+
+.site-footer nav {
+  ul { display: flex; gap: 20px; flex-wrap: wrap; }
+  a {
+    font-size: 0.85rem;
+    color: $color-ink-soft;
+    text-decoration: none;
+    &:hover { color: $color-accent; }
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  a {
+    font-size: 0.85rem;
+    color: $color-ink-soft;
+    text-decoration: none;
+    &:hover { color: $color-accent; }
+  }
+}
+
+.footer-meta {
+  margin-top: 24px;
+  font-size: 0.78rem;
+  color: $color-muted;
+}
+
+// Responsive
+@media (max-width: 720px) {
+  .site-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .site-nav ul { flex-wrap: wrap; gap: 14px 18px; }
+  .site-footer-grid { flex-direction: column; gap: 24px; }
+}

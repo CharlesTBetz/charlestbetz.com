@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+intro: "Notes from the desk. Process, performances, and what I'm thinking about."
+---
+<div class="container container--narrow">
+  <h2 class="page-title">{{ page.title }}</h2>
+  <p class="page-intro">{{ page.intro }}</p>
+
+  <div class="card-stream">
+    {% assign blog_posts = site.posts | where: "card_type", "blog" %}
+    {% for post in blog_posts %}
+      <article class="card">
+        <span class="card-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html }}</p>
+        <a class="cta-link" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+      </article>
+    {% endfor %}
+  </div>
+</div>

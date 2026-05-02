@@ -1,24 +1,31 @@
 ---
 layout: default
 ---
-<article class="post">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      {{ page.date | date: "%B %d, %Y" }}
-      {% if page.categories %}
-        {% for category in page.categories %}
-          · {{ category }}
-        {% endfor %}
-      {% endif %}
-    </p>
-  </header>
+<div class="container container--narrow">
+  <article>
+    <header class="post-header">
+      <div class="post-meta">
+        <span class="card-tag">{{ page.card_type | default: "blog" | capitalize }}
+          {% if page.song_meta %} &middot; {{ page.song_meta }}{% endif %}
+          {% if page.project_name %} &middot; <a href="{{ page.project_url | relative_url }}">{{ page.project_name }}</a>{% endif %}
+        </span>
+        <span class="card-date">{{ page.date | date: "%B %d, %Y" }}</span>
+      </div>
+      <h1>{{ page.title }}</h1>
+    </header>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+    {% if page.youtube_id %}
+      <div class="video-embed-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/{{ page.youtube_id }}"
+          title="{{ page.title }}"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen loading="lazy"></iframe>
+      </div>
+    {% endif %}
 
-  <footer class="post-footer">
-    <p><a href="{{ site.baseurl }}/blog/">← All Posts</a></p>
-  </footer>
-</article>
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </article>
+</div>

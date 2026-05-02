@@ -1,0 +1,41 @@
+---
+layout: default
+title: Songs
+permalink: /songs/
+intro: "All songs, newest first."
+---
+<div class="container container--narrow">
+  <h2 class="page-title">{{ page.title }}</h2>
+  <p class="page-intro">{{ page.intro }}</p>
+
+  <div class="card-stream">
+    {% assign songs = site.posts | where: "card_type", "song" | sort: "date" | reverse %}
+    {% assign compositions = site.posts | where: "card_type", "composition" | sort: "date" | reverse %}
+    {% assign all_songs = songs | concat: compositions | sort: "date" | reverse %}
+    {% for post in all_songs %}
+      <article class="card">
+        <span class="card-tag">
+          {% if post.project_name %}
+            From: <a href="{{ post.project_url | relative_url }}">{{ post.project_name }}</a>
+          {% else %}
+            {{ post.song_meta }}
+          {% endif %}
+        </span>
+        <span class="card-date">{{ post.date | date: "%Y" }}</span>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+
+        {% if post.youtube_id %}
+          <div class="video-embed-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/{{ post.youtube_id }}"
+              title="{{ post.title }}"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+        {% endif %}
+
+        <p>{{ post.excerpt | strip_html }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</div>

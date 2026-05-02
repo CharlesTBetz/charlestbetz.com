@@ -2,7 +2,11 @@
 layout: post
 title: "Wild and Precious"
 date: 2024-02-16
-categories: [compositions, choral]
+card_type: composition
+front_page: false
+song_meta: "Choral · SATB"
+youtube_id: "eOvH8a_IizI"
+excerpt: "A commission written for a beloved person. An SATB choral piece based on Mary Oliver's The Summer Day."
 ---
 
 *9/23/2023 - ported from Typepad*

@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<article class="page">
-  <header class="page-header">
-    <h1 class="page-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="page-content">
-    {{ content }}
-  </div>
-</article>
+<div class="container container--narrow">
+  <article>
+    <h2 class="page-title">{{ page.title }}</h2>
+    {% if page.intro %}<p class="page-intro">{{ page.intro }}</p>{% endif %}
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </article>
+</div>

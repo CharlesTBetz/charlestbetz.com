@@ -1,0 +1,17 @@
+main:
+  - title: Projects
+    url: /projects/
+  - title: Shows
+    url: /shows/
+  - title: Compositions
+    url: /compositions/
+  - title: Songs
+    url: /songs/
+  - title: Gallery
+    url: /gallery/
+  - title: Bio
+    url: /bio/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/

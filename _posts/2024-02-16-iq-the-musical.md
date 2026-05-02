@@ -2,7 +2,11 @@
 layout: post
 title: "IQ: The Musical"
 date: 2024-02-16
-categories: [musical-theater]
+card_type: blog
+front_page: false
+excerpt: "The 15-minute musical that was the culmination of studying for a full year with New Musicals, Inc."
+project_name: "IQ: The Musical"
+project_url: /projects/iq-the-musical/
 ---
 
 *9/23/2024 - ported from Typepad*

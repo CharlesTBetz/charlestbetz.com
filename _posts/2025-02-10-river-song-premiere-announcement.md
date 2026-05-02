@@ -2,6 +2,8 @@
 layout: post
 title: "River Song Premiere with Crescendo Community Chorus"
 date: 2025-02-10
+card_type: show
+front_page: true
 excerpt: "Premiering River Song with Crescendo Community Chorus on May 15, in partnership with Friends of the Mississippi River."
 ---
 

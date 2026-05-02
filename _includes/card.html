@@ -1,0 +1,41 @@
+{% comment %}
+  Renders a card from a post. Post front matter:
+    card_type: project|song|show|composition|blog
+    front_page: true|false
+    pinned: true|false
+    youtube_id: optional
+    image: optional path
+    project_name: optional (for songs belonging to a project)
+    project_url: optional
+{% endcomment %}
+<article class="card{% if include.post.pinned %} card--pinned{% endif %}">
+  {% if include.post.pinned %}<div class="pin-indicator">Pinned</div>{% endif %}
+
+  <span class="card-tag">
+    {{ include.post.card_type | capitalize }}
+    {% if include.post.project_name %}
+      &middot; <a href="{{ include.post.project_url | relative_url }}">{{ include.post.project_name }}</a>
+    {% endif %}
+    {% if include.post.song_meta %} &middot; {{ include.post.song_meta }}{% endif %}
+  </span>
+
+  <span class="card-date">{{ include.post.date | date: "%B %Y" }}</span>
+
+  <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+
+  {% if include.post.youtube_id %}
+    <div class="video-embed-frame">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/{{ include.post.youtube_id }}"
+        title="{{ include.post.title }}"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen loading="lazy"></iframe>
+    </div>
+  {% elsif include.post.image %}
+    <div class="card-image">
+      <img src="{{ include.post.image | relative_url }}" alt="{{ include.post.title }}">
+    </div>
+  {% endif %}
+
+  <p>{{ include.post.excerpt | strip_html }}</p>
+</article>

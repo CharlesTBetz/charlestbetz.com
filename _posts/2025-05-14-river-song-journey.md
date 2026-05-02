@@ -2,7 +2,9 @@
 layout: post
 title: "River Song: Notes on the Journey"
 date: 2025-05-14
-categories: [compositions, choral]
+card_type: blog
+front_page: true
+excerpt: "How a piece for the Mississippi came together with a choir in Argentina."
 ---
 
 *In which an irresponsibly large piece of AV equipment and a chance meeting with a former Secretary of State result in a choral work honoring the Mississippi and human resilience.*

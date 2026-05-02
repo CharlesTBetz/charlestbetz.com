@@ -1,0 +1,31 @@
+---
+layout: default
+title: Compositions
+permalink: /compositions/
+intro: "Choral works and art songs."
+---
+<div class="container">
+  <h2 class="page-title">{{ page.title }}</h2>
+  <p class="page-intro">{{ page.intro }}</p>
+
+  <div class="card-grid">
+    {% assign compositions = site.posts | where: "card_type", "composition" | sort: "date" | reverse %}
+    {% for post in compositions %}
+      <article class="card">
+        {% if post.youtube_id %}
+          <div class="video-embed-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/{{ post.youtube_id }}"
+              title="{{ post.title }}"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+        {% endif %}
+        <span class="card-tag">{{ post.song_meta }}</span>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html }}</p>
+        <span class="card-date">{{ post.date | date: "%Y" }}</span>
+      </article>
+    {% endfor %}
+  </div>
+</div>

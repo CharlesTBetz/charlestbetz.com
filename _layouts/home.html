@@ -1,7 +1,26 @@
 ---
 layout: default
 ---
+<div class="container container--narrow">
 
-<div class="home">
-  {{ content }}
+  <section class="hero">
+    <p class="label">Composer &middot; Lyricist &middot; Arranger &middot; Writer</p>
+    <h1 class="tagline">{{ site.tagline }}</h1>
+    <p class="hero-intro">Based in Minneapolis. I write musical theater and choral music.</p>
+  </section>
+
+  <div class="card-stream">
+    {% assign homepage_posts = site.posts | where: "front_page", true %}
+    {% assign pinned = homepage_posts | where: "pinned", true | sort: "date" | reverse %}
+    {% assign unpinned = homepage_posts | where_exp: "post", "post.pinned != true" %}
+
+    {% for post in pinned %}
+      {% include card.html post=post %}
+    {% endfor %}
+
+    {% for post in unpinned %}
+      {% include card.html post=post %}
+    {% endfor %}
+  </div>
+
 </div>

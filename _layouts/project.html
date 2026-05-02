@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<div class="container container--narrow">
+  <article>
+    <header class="project-header">
+      <span class="project-status">{{ page.status }}</span>
+      <h1>{{ page.title }}</h1>
+      <p class="project-logline">{{ page.logline }}</p>
+      <p class="project-collaborators">{{ page.collaborators_text }}</p>
+    </header>
+
+    {% if page.hero_image %}
+      <div class="card-image">
+        <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_image_alt | default: page.title }}">
+      </div>
+    {% endif %}
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    {% comment %} Songs from this project {% endcomment %}
+    {% assign project_songs = site.posts | where: "card_type", "song" | where: "project_name", page.title %}
+    {% if project_songs.size > 0 %}
+      <h2>Songs</h2>
+      <div class="card-stream">
+        {% for post in project_songs %}
+          {% include card.html post=post %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% comment %} Related posts (milestones, news about this project) {% endcomment %}
+    {% assign related = site.posts | where: "project_name", page.title | where_exp: "post", "post.card_type != 'song'" %}
+    {% if related.size > 0 %}
+      <h2>News &amp; Updates</h2>
+      <div class="card-stream">
+        {% for post in related %}
+          {% include card.html post=post %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </article>
+</div>

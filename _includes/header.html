@@ -1,0 +1,20 @@
+<header class="site-header">
+  <div class="container">
+    <div class="site-header-inner">
+      <a class="wordmark" href="{{ '/' | relative_url }}">Charles T. Betz</a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav-list">Menu</button>
+        <ul id="site-nav-list">
+          {% for item in site.data.navigation.main %}
+            <li>
+              <a href="{{ item.url | relative_url }}"
+                 {% if page.url == item.url %}class="is-active"{% endif %}>
+                {{ item.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

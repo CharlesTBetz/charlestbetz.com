@@ -1,29 +1,58 @@
-title: Charles T. Betz, Composer
-description: "Composer and lyricist - musical theater, choral works, and songs"
+title: "Charles T. Betz"
+tagline: "Telling stories with music, in a universe of simultaneous time"
+description: "Charles T. Betz is a composer, lyricist, arranger, and writer based in Minneapolis. Musical theater and choral works."
+author:
+  name: "Charles T. Betz"
+  email: "char@charlestbetz.com"
 url: "https://charlestbetz.github.io"
 baseurl: "/charlestbetz.com"
 
-# Author info
-author:
-  name: Charles T. Betz
-  email: char@charlestbetz.com
+markdown: kramdown
+permalink: /blog/:year/:month/:title/
 
-theme: minima
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
 
-header_pages:
-  - bio.md
-  - blog.md
-  - contact.md
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: "pages"
+    values:
+      layout: page
 
 plugins:
+  - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
-# Pagination
-paginate: 10
-paginate_path: "/blog/page:num/"
+social:
+  bluesky: "https://bsky.app/profile/charlestbetz.bsky.social"
+  instagram: "https://www.instagram.com/charlesbetz"
+  linkedin: "https://www.linkedin.com/in/charlestbetz/"
+  youtube: "https://www.youtube.com/@charlestbetz"
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - vendor
+  - vendor/
+  - node_modules/
+  - mockup.html
+  - charlestbetz-jekyll-spec.md
+  - DONE.txt
+  - CARD-CONVERSION-SUMMARY.md
+  - MIGRATION-SUMMARY.md
+  - QUICKSTART.md
+  - DEPLOYMENT.md

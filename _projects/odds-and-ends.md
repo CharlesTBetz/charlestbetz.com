@@ -1,7 +1,7 @@
 ---
 title: "Odds and Ends"
 status: "Ongoing"
-logline: "Songs looking for a home — standalone pieces written for their own reasons."
+logline: "Songs written for their own sake, or for projects that went down a different timeline."
 collaborators_text: "Music & lyrics by Charles T. Betz."
 year_started: 2020
 order: 11

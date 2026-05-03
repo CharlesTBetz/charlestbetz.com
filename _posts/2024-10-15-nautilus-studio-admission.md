@@ -2,10 +2,8 @@
 layout: post
 title: "Admitted to Nautilus Composer-Librettist Studio"
 date: 2024-10-15
-card_type: project
+card_type: blog
 front_page: true
-project_name: "Five Minutes On The Low Road"
-project_url: /projects/five-minutes-on-the-low-road/
 excerpt: "Big honor - intensive workshop developing material in the Nautilus Composer-Librettist Studio."
 ---
 

@@ -5,6 +5,8 @@ logline: "A woman has a near-death experience, and lives with the consequences."
 collaborators_text: "Book by Josiah Thomas Turner. Music & lyrics by Charles T. Betz."
 year_started: 2023
 order: 1
+hero_image: /assets/images/projects/five-minutes-logo.png
+hero_image_alt: "Five Minutes On The Low Road logo"
 ---
 
 ## About the show

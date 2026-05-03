@@ -5,6 +5,8 @@ logline: "A 15-minute musical about obsolescence — what happens when someone b
 collaborators_text: "Music & lyrics by Charles T. Betz."
 year_started: 2022
 order: 2
+hero_image: /assets/images/projects/iq-replaced.jpg
+hero_image_alt: "Replaced! Six Short Musicals About Obsolescence — Los Angeles 2023"
 ---
 
 ## About the show

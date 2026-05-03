@@ -5,8 +5,6 @@ date: 2024-11-25
 card_type: show
 front_page: true
 image: /assets/images/shows/rough-cuts-2024-11.jpg
-project_name: "Five Minutes On The Low Road"
-project_url: /projects/five-minutes-on-the-low-road/
 excerpt: "Selections from the 2024 Nautilus Composer-Librettist Studio at Rough Cuts — two evenings, two venues, sketches and songs that offer a fascinating glimpse into the collaborative process of making new opera and music-theater."
 ---
 

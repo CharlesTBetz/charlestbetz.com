@@ -4,9 +4,38 @@
 - **Platform:** Jekyll on GitHub Pages
 - **Repo:** github.com/CharlesTBetz/charlestbetz.com
 - **Domain:** charlestbetz.com, registered at GoDaddy
-- **DNS:** GoDaddy — 4 A records to GitHub Pages IPs + CNAME www → CharlesTBetz.github.io
+- **DNS:** GoDaddy — see DNS Records below
 - **HTTPS:** Enforced via GitHub Pages (Let's Encrypt)
+- **Email:** Google Workspace (char@charlestbetz.com)
 - **Deploy:** Push to main → GitHub Pages builds automatically
+
+## DNS Records (GoDaddy)
+
+All TTLs set to 30 minutes.
+
+### Web (GitHub Pages)
+| Type | Name | Value |
+|------|------|-------|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | CharlesTBetz.github.io |
+
+### Email (Google Workspace)
+| Type | Name | Value | Priority |
+|------|------|-------|----------|
+| MX | @ | ASPMX.L.GOOGLE.COM | 1 |
+| MX | @ | ALT1.ASPMX.L.GOOGLE.COM | 5 |
+| MX | @ | ALT2.ASPMX.L.GOOGLE.COM | 5 |
+| MX | @ | ALT3.ASPMX.L.GOOGLE.COM | 10 |
+| MX | @ | ALT4.ASPMX.L.GOOGLE.COM | 10 |
+| TXT | @ | v=spf1 include:_spf.google.com ~all |
+
+### Notes
+- Nameservers must be GoDaddy defaults (ns1/ns2.domaincontrol.com), NOT Wix
+- When nameservers were at Wix, Wix managed all DNS including MX records. Reclaiming nameservers to GoDaddy requires re-adding ALL records (A, CNAME, MX, TXT) from scratch.
+- Check Google Workspace admin for DKIM TXT record that may also need adding
 
 ## Local Development
 ```

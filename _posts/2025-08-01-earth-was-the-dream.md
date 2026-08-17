@@ -6,7 +6,7 @@ card_type: composition
 front_page: true
 pinned: false
 song_meta: "Song · Solo voice"
-youtube_id: "epX-xNt6h90"
+youtube_id: "06IxhEzTSMs"
 excerpt: "Sung by the great Lia Peros - final version after much refinement."
 ---
 
@@ -14,7 +14,7 @@ Check out "Earth Was The Dream!" - sung by the great Lia Peros - final version f
 
 ## Video with imagery
 
-{% include youtube-embed.html id="epX-xNt6h90" title="Earth Was The Dream — video with imagery, sung by Lia Peros" %}
+{% include youtube-embed.html id="06IxhEzTSMs" title="Earth Was The Dream — video with imagery, sung by Lia Peros" %}
 
 ## Score video
 

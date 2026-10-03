@@ -2,7 +2,7 @@
 title: "Five Minutes On The Low Road"
 status: "In development"
 logline: "A woman has a near-death experience, and lives with the consequences."
-collaborators_text: "Book by Josiah Thomas Turner. Music & lyrics by Charles T. Betz."
+collaborators_text: "Book, music & lyrics by Charles T. Betz. Additional book and dramaturgy by Josiah Thomas Turner."
 year_started: 2023
 order: 1
 hero_image: /assets/images/projects/five-minutes-hero.jpg

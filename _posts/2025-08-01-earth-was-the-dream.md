@@ -6,7 +6,7 @@ card_type: composition
 front_page: true
 pinned: false
 song_meta: "Song · Solo voice"
-youtube_id: "06IxhEzTSMs"
+youtube_id: "QcUStJWsifw"
 excerpt: "Sung by the great Lia Peros - final version after much refinement."
 ---
 

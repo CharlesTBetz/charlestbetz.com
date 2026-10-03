@@ -11,7 +11,7 @@ project_url: /projects/iq-the-musical/
 
 *9/23/2024 - ported from Typepad*
 
-So, here it is - what I've been talking about - the 15 minute musical that was the culmination of studying for a full year with [New Musicals, Inc.](http://nmi.org) It was performed in Los Angeles in July 2023 as part of an evening program entitled "Replaced! Six Short Musicals About Obsolescence."
+So, here it is - what I've been talking about - the 15 minute musical that was the culmination of studying for a full year with [New Musicals, Inc.](http://nmi.org){:target="_blank" rel="noopener"} It was performed in Los Angeles in July 2023 as part of an evening program entitled "Replaced! Six Short Musicals About Obsolescence."
 
 ## The Premise
 

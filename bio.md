@@ -10,7 +10,7 @@ He was the music director at Lake Harriet Spiritual Community (Minneapolis), 199
 
 ## Musical Theater Training
 
-He completed the full year 2022-2023 Core curriculum at [New Musicals, Incorporated.](http://nmi.org) This culminated in the staging of his first musical, a 15-minute work entitled "IQ: The Musical" as part of a full evening program produced in Los Angeles (Replaced! Six Short Musicals About Obsolescence). He completed the second-year "First Draft" program, working with book writer Peter Welkin on an historical musical, The Womanless Wedding, and was invited back to the Core program in 2023-2024 as a guest composer. In 2024 he was selected for Nautilus Music-Theater's Composer-Librettist Studio.
+He completed the full year 2022-2023 Core curriculum at [New Musicals, Incorporated.](http://nmi.org){:target="_blank" rel="noopener"} This culminated in the staging of his first musical, a 15-minute work entitled "IQ: The Musical" as part of a full evening program produced in Los Angeles (Replaced! Six Short Musicals About Obsolescence). He completed the second-year "First Draft" program, working with book writer Peter Welkin on an historical musical, The Womanless Wedding, and was invited back to the Core program in 2023-2024 as a guest composer. In 2024 he was selected for Nautilus Music-Theater's Composer-Librettist Studio.
 
 ## Current Projects
 
@@ -25,8 +25,8 @@ Charles is interested in collaborating on spiritual and multiverse-themed musica
 ## Memberships & Training
 
 Charles is a member of:
-- [New Musical Theater Exchange](http://nmte.org) in Minneapolis
-- [Minnesota Association of Songwriters](https://mnsongwriters.org/)
-- [The Playwrights Center](https://pwcenter.org/)
+- [New Musical Theater Exchange](http://nmte.org){:target="_blank" rel="noopener"} in Minneapolis
+- [Minnesota Association of Songwriters](https://mnsongwriters.org/){:target="_blank" rel="noopener"}
+- [The Playwrights Center](https://pwcenter.org/){:target="_blank" rel="noopener"}
 
 He has studied songwriting, composition, and music production with Diana Grasselli, Andrew Raiher, Peter Mayer, and with the faculty of SongU, and book writing with Elise Dewsberry and John Sparks of NMI. He is competent in Dorico and Logic Audio for arranging, part preparation, and production and is trained (to exacting NMI standards!) in the preparation of Broadway-quality integrated script/scores for musical theater.

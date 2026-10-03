@@ -7,4 +7,4 @@ front_page: true
 excerpt: "Premiering River Song with Crescendo Community Chorus on May 15, in partnership with Friends of the Mississippi River."
 ---
 
-It's definite, I am [premiering another work with Crescendo Community Chorus on May 15](https://www.crescendochorus.org/), working title "River Song." This concert is in partnership with Friends of the Mississippi River, headed by my good friend Whitney Clark.
+It's definite, I am [premiering another work with Crescendo Community Chorus on May 15](https://www.crescendochorus.org/){:target="_blank" rel="noopener"}, working title "River Song." This concert is in partnership with Friends of the Mississippi River, headed by my good friend Whitney Clark.

@@ -7,4 +7,4 @@ front_page: true
 excerpt: "Big honor - intensive workshop developing material in the Nautilus Composer-Librettist Studio."
 ---
 
-I've been admitted to the [Nautilus Composer-Librettist Studio](https://nautilus-genome-project.squarespace.com/2024-mn-cl-studio). Big honor, didn't want to say anything until the decision. I'll be in an intensive workshop-like setting from 11/9-24, developing material for various prompts crafted by the educational team. Thanks to all who have supported me thus far!
+I've been admitted to the [Nautilus Composer-Librettist Studio](https://nautilus-genome-project.squarespace.com/2024-mn-cl-studio){:target="_blank" rel="noopener"}. Big honor, didn't want to say anything until the decision. I'll be in an intensive workshop-like setting from 11/9-24, developing material for various prompts crafted by the educational team. Thanks to all who have supported me thus far!

@@ -16,6 +16,6 @@ A new musical exploring what happens when a woman's near-death experience upends
 ## Development history
 
 - **February 2025** — Josiah Thomas Turner joins as book writer
-- **November 2024** — Admitted to the [Nautilus Composer-Librettist Studio](https://nautilus-genome-project.squarespace.com/2024-mn-cl-studio); intensive workshop developing material
+- **November 2024** — Admitted to the [Nautilus Composer-Librettist Studio](https://nautilus-genome-project.squarespace.com/2024-mn-cl-studio){:target="_blank" rel="noopener"}; intensive workshop developing material
 - **July 2024** — Reading of the book with LA-based actors as part of the "From Outline to Draft" NMI course with John Sparks
 - **April 2024** — Initial casting and collaborator search

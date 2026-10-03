@@ -11,7 +11,7 @@ excerpt: "A commission written for a beloved person. An SATB choral piece based 
 
 *9/23/2023 - ported from Typepad*
 
-Here is a commission I wrote for a beloved person. It is an SATB choral piece. The concept is based on the famous Mary Oliver poem, [The Summer Day](https://wordsfortheyear.com/2015/06/21/the-summer-day-by-mary-oliver/).
+Here is a commission I wrote for a beloved person. It is an SATB choral piece. The concept is based on the famous Mary Oliver poem, [The Summer Day](https://wordsfortheyear.com/2015/06/21/the-summer-day-by-mary-oliver/){:target="_blank" rel="noopener"}.
 
 ## Video with imagery
 

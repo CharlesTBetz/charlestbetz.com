@@ -19,7 +19,7 @@ I learned that day that screens of this size are properly flown from rigging. We
 
 Somewhere in this drama of Allen wrenches and audiovisual ambition, I ended up collaborating with former Minnesota Secretary of State Mark Ritchie, who has a personal connection to the chorus. Mark didn't know me, but we had a mutual connection in my high school buddy Whitney Clark, longtime executive director of Friends of the Mississippi River (FMR). I mentioned Whitney, and Mark immediately responded by saying "Hey, FMR and Crescendo should partner on a concert in honor of the river!"
 
-Ok then! Well, it was the kind of idea that carried "why not?" energy. I brought it to Dr. Randall Buikema, the chorus director. "Why not?" I brought it to Whitney. "Why not?" And somewhere in that current, the three of us decided we were doing it. Should there be a new piece for the occasion? [Wild and Precious](https://www.youtube.com/watch?v=eOvH8a_IizI) had been well received (although the request was, please write something a little easier...). "Why not?" I said… and that was the beginning of River Song.
+Ok then! Well, it was the kind of idea that carried "why not?" energy. I brought it to Dr. Randall Buikema, the chorus director. "Why not?" I brought it to Whitney. "Why not?" And somewhere in that current, the three of us decided we were doing it. Should there be a new piece for the occasion? [Wild and Precious](https://www.youtube.com/watch?v=eOvH8a_IizI){:target="_blank" rel="noopener"} had been well received (although the request was, please write something a little easier...). "Why not?" I said… and that was the beginning of River Song.
 
 ## On the River and Its Lessons
 
@@ -37,14 +37,14 @@ The ideas for this piece took shape in early 2025, just as the United States was
 
 Two videos of River Song (as sung by the Macrófona choir) are posted:
 
-- [Music video with river imagery](https://youtu.be/z9oHgahDknA)
-- [Score video](https://youtu.be/V4UDeDlYxI8)
+- [Music video with river imagery](https://youtu.be/z9oHgahDknA){:target="_blank" rel="noopener"}
+- [Score video](https://youtu.be/V4UDeDlYxI8){:target="_blank" rel="noopener"}
 
-A [printed version](https://c586375e-5c0d-42a7-86f4-eb0362bf102b.usrfiles.com/ugd/c58637_b8d20f0402664ba381910139e9fa3450.pdf) of River Song is available for choirs, please contact me if interested.
+A [printed version](https://c586375e-5c0d-42a7-86f4-eb0362bf102b.usrfiles.com/ugd/c58637_b8d20f0402664ba381910139e9fa3450.pdf){:target="_blank" rel="noopener"} of River Song is available for choirs, please contact me if interested.
 
 River Song was premiered on May 15th, 2025 at DeLaSalle High School, on Nicollet Island in the Mississippi in the heart of Old Minneapolis, a city built on the Mississippi's power. Whitney introduced my piece, and I'm thrilled that this became reality.
 
-[View the livestream of the premiere](https://www.youtube.com/live/zFBaIpSntM0)
+[View the livestream of the premiere](https://www.youtube.com/live/zFBaIpSntM0){:target="_blank" rel="noopener"}
 
 ## The Text
 

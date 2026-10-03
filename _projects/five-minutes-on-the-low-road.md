@@ -5,9 +5,13 @@ logline: "A woman has a near-death experience, and lives with the consequences."
 collaborators_text: "Book by Josiah Thomas Turner. Music & lyrics by Charles T. Betz."
 year_started: 2023
 order: 1
-hero_image: /assets/images/projects/five-minutes-logo.png
-hero_image_alt: "Five Minutes On The Low Road logo"
+hero_image: /assets/images/projects/five-minutes-hero.jpg
+hero_image_alt: "Five Minutes On The Low Road artwork by Luke O'Leary"
 ---
+
+*Artwork by Luke O'Leary*
+
+**Visit the show's website: <a href="https://5minlowroad.com" target="_blank" rel="noopener">5minlowroad.com</a>** — songs, lyrics, the creative team, and where the show is headed next.
 
 ## About the show
 
